@@ -1,0 +1,21 @@
+-- Creating a database-- 
+create database demo;
+-- deleting database--  
+drop database demo;
+-- using database--  
+use demo;
+-- creating table -- 
+create table student (id int,name varchar(50),email varchar(50));
+desc student;
+-- Selecting table details--  
+select * from student;
+select name from student;
+-- Inserting values into tables--  
+insert into student values(1,"abc","xyz@gmail.com");
+-- Updating values--  
+update student set email="fgh@gmail.com" where id=1;
+update student set name="defg" where email="fgh@gmail.com";
+-- Deleting data--  
+delete from student where name="defg";
+truncate table student;
+drop table student;
